@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #333;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.slider{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.atual{
+    opacity: 1;
+}
+
+.slide .content{
+    position: absolute;
+    bottom: 20px;
+    left: -690px;
+    opacity: 0;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.slide.atual .content{
+    transform: translateX(700px);
+    opacity: 1;
+    transition: all 0.7s ease-in-out 0.3s;
+}
+
+.botoes #anterior{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+}
+.botoes #proximo{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+}
+
+.botoes button{
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #333;
+    padding: 10px;
+    outline: none;
+    font-size: 25px;
+}
+
+.botoes button:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(16, 16, 16);
+}
