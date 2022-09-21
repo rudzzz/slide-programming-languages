@@ -48,3 +48,16 @@ function slideAnterior(){
 // adicionando evento nos botoes 
 proximo.addEventListener('click', proximoSlide);
 anterior.addEventListener('click', slideAnterior);
+
+// evento das setas do teclado
+
+document.onkeydown = passaSlides;
+
+function passaSlides(event){
+    if(event.keyCode == "37"){
+        console.log("esquerda");
+    }
+    else if(event.keyCode == "39"){
+        console.log('direita');
+    }
+}
