@@ -54,19 +54,19 @@ body{
 
 .botoes #anterior{
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 15px;
 }
 .botoes #proximo{
     position: absolute;
-    top: 50%;
+    top: 35%;
     right: 15px;
 }
 
 .botoes button{
-    border: 2px solid #fff;
-    border-radius: 10px;
-    background-color: #333;
+    border: 2px solid #333;
+    border-radius: 22px;
+    background-color: #fff;
     padding: 10px;
     outline: none;
     font-size: 25px;
@@ -75,5 +75,44 @@ body{
 .botoes button:hover{
     cursor: pointer;
     color: #fff;
+    border: 2px solid #fff;
     background-color: rgb(16, 16, 16);
+}
+
+.slide:first-child{
+    background-image: url('img/slide-1.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;;
+}
+.slide:nth-child(2){
+    background-image: url('img/slide-2.png');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;;
+}
+.slide:nth-child(3){
+    background-image: url('img/slide-3.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;;
+}
+
+.slide:nth-child(4){
+    background-image: url('img/slide-4.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;;
+}
+
+.slide:nth-child(5){
+    background-image: url('img/slide-5.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;;
 }
