@@ -8,12 +8,16 @@ const anterior = document.querySelector('#anterior');
 // função para passar slide
 function proximoSlide(){
     // console.log('foi')
+
     // selecionando div com a classe atual
     const atual = document.querySelector('.atual');
+
     // removendo a classe atual da primeira div
     atual.classList.remove('atual');
+
     // se tiver um proximo elemento irmao
     if(atual.nextElementSibling){
+
         // adiciona a classe atual para esse elemento
         atual.nextElementSibling.classList.add('atual');
     }
@@ -27,8 +31,10 @@ function proximoSlide(){
 
 function slideAnterior(){
     // console.log('voltou');
+
     // selecionando div com a classe atual
     const atual = document.querySelector('.atual');
+
     // removendo a classe atual da div que está
     atual.classList.remove('atual');
 
@@ -56,6 +62,7 @@ document.onkeydown = passaSlides;
 
 // recebe como parametro um evento
 function passaSlides(event){
+    
     // se a tecla pressionada nesse evento for a 37, que é a seta esquerda, executa a função de voltar slide
     if(event.keyCode == "37"){
         // console.log("esquerda");
